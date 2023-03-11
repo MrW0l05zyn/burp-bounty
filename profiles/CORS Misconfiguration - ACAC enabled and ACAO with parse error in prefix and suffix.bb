@@ -1,0 +1,82 @@
+[
+  {
+    "ProfileName": "CORS Misconfiguration - ACAC enabled and ACAO with parse error in prefix and suffix",
+    "Name": "",
+    "Enabled": true,
+    "Scanner": 1,
+    "Author": "@MrW0l05zyn",
+    "Payloads": [
+      "true,{CURRENT_PROTOCOL}://{CURRENT_HOST}malicious-website.com",
+      "true,{CURRENT_PROTOCOL}://{CURRENT_HOST}.malicious-website.com",
+      "true,{CURRENT_PROTOCOL}://{CURRENT_HOST}_malicious-website.com",
+      "true,{CURRENT_PROTOCOL}://{CURRENT_HOST}-malicious-website.com",
+      "true,{CURRENT_PROTOCOL}://{CURRENT_HOST}%60malicious-website.com",
+      "true,{CURRENT_PROTOCOL}://malicious-website{CURRENT_HOST}",
+      "true,{CURRENT_PROTOCOL}://malicious-website_{CURRENT_HOST}",
+      "true,{CURRENT_PROTOCOL}://malicious-website-{CURRENT_HOST}",
+      "true,{CURRENT_PROTOCOL}://malicious-website%60{CURRENT_HOST}"
+    ],
+    "Encoder": [],
+    "UrlEncode": false,
+    "CharsToUrlEncode": "",
+    "Grep": [
+      "true,,(Access-Control-Allow-Origin:(.)*malicious-website\\.com(.|\\r|\\n)*Access-Control-Allow-Credentials:(\\s)*true)|(Access-Control-Allow-Credentials:(\\s)*true(.|\\r|\\n)*Access-Control-Allow-Origin:(.)*malicious-website\\.com)|(Access-Control-Allow-Origin:(.)*malicious-website(.)*(.|\\r|\\n)*Access-Control-Allow-Credentials:(\\s)*true)|(Access-Control-Allow-Credentials:(\\s)*true(.|\\r|\\n)*Access-Control-Allow-Origin:(.)*malicious-website)"
+    ],
+    "Tags": [
+      "All",
+      "CORS"
+    ],
+    "PayloadResponse": false,
+    "NotResponse": false,
+    "TimeOut1": "",
+    "TimeOut2": "",
+    "isTime": false,
+    "contentLength": "",
+    "iscontentLength": false,
+    "CaseSensitive": false,
+    "ExcludeHTTP": false,
+    "OnlyHTTP": true,
+    "IsContentType": false,
+    "ContentType": "",
+    "HttpResponseCode": "",
+    "NegativeCT": false,
+    "IsResponseCode": false,
+    "ResponseCode": "",
+    "NegativeRC": false,
+    "urlextension": "",
+    "isurlextension": false,
+    "NegativeUrlExtension": false,
+    "isHeaderValue": true,
+    "sequence": false,
+    "NewHeaders": [
+      "Origin"
+    ],
+    "MatchType": 2,
+    "Scope": 0,
+    "RedirType": 0,
+    "MaxRedir": 0,
+    "requestType": 1,
+    "rawRequest": "",
+    "payloadPosition": 1,
+    "payloadsFile": "",
+    "grepsFile": "",
+    "IssueName": "CORS Misconfiguration - ACAC enabled and ACAO with parse error in prefix and suffix",
+    "IssueSeverity": "Low",
+    "IssueConfidence": "Tentative",
+    "IssueDetail": "\u003cbr/\u003e\nPrefix: \u003cbr/\u003e\u003cbr/\u003e\n\nAccess-Control-Allow-Origin: https://example.com-malicious-website.com \u003cbr/\u003e\nAccess-Control-Allow-Credentials: true\u003cbr/\u003e\u003cbr/\u003e\n\nSuffix: \u003cbr/\u003e\u003cbr/\u003e\n\nAccess-Control-Allow-Origin: https://malicious-website-example.com \u003cbr/\u003e\nAccess-Control-Allow-Credentials: true",
+    "RemediationDetail": "",
+    "IssueBackground": "",
+    "RemediationBackground": "",
+    "Header": [],
+    "VariationAttributes": [],
+    "InsertionPointType": [
+      78
+    ],
+    "Scanas": false,
+    "Scantype": 0,
+    "pathDiscovery": false,
+    "changeHttpRequest": false,
+    "showIssue": false,
+    "changeHttpRequestType": 1
+  }
+]
