@@ -2,7 +2,7 @@
   {
     "ProfileName": "CORS Misconfiguration - ACAC enabled and ACAO with null value",
     "Name": "",
-    "Enabled": true,
+    "Enabled": false,
     "Scanner": 1,
     "Author": "@MrW0l05zyn",
     "Payloads": [

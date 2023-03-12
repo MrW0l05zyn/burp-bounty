@@ -2,7 +2,7 @@
   {
     "ProfileName": "CORS Misconfiguration - ACAC enabled and ACAO with parse error in prefix and suffix",
     "Name": "",
-    "Enabled": true,
+    "Enabled": false,
     "Scanner": 1,
     "Author": "@MrW0l05zyn",
     "Payloads": [
@@ -10,11 +10,9 @@
       "true,{CURRENT_PROTOCOL}://{CURRENT_HOST}.malicious-website.com",
       "true,{CURRENT_PROTOCOL}://{CURRENT_HOST}_malicious-website.com",
       "true,{CURRENT_PROTOCOL}://{CURRENT_HOST}-malicious-website.com",
-      "true,{CURRENT_PROTOCOL}://{CURRENT_HOST}%60malicious-website.com",
       "true,{CURRENT_PROTOCOL}://malicious-website{CURRENT_HOST}",
       "true,{CURRENT_PROTOCOL}://malicious-website_{CURRENT_HOST}",
-      "true,{CURRENT_PROTOCOL}://malicious-website-{CURRENT_HOST}",
-      "true,{CURRENT_PROTOCOL}://malicious-website%60{CURRENT_HOST}"
+      "true,{CURRENT_PROTOCOL}://malicious-website-{CURRENT_HOST}"
     ],
     "Encoder": [],
     "UrlEncode": false,
