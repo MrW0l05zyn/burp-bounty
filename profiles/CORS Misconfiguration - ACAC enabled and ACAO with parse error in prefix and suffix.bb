@@ -2,7 +2,7 @@
   {
     "ProfileName": "CORS Misconfiguration - ACAC enabled and ACAO with parse error in prefix and suffix",
     "Name": "",
-    "Enabled": false,
+    "Enabled": true,
     "Scanner": 1,
     "Author": "@MrW0l05zyn",
     "Payloads": [
@@ -61,7 +61,7 @@
     "IssueName": "CORS Misconfiguration - ACAC enabled and ACAO with parse error in prefix and suffix",
     "IssueSeverity": "Low",
     "IssueConfidence": "Tentative",
-    "IssueDetail": "\u003cbr/\u003e\nPrefix: \u003cbr/\u003e\u003cbr/\u003e\n\nAccess-Control-Allow-Origin: https://example.com-malicious-website.com \u003cbr/\u003e\nAccess-Control-Allow-Credentials: true\u003cbr/\u003e\u003cbr/\u003e\n\nSuffix: \u003cbr/\u003e\u003cbr/\u003e\n\nAccess-Control-Allow-Origin: https://malicious-website-example.com \u003cbr/\u003e\nAccess-Control-Allow-Credentials: true",
+    "IssueDetail": "\u003cbr /\u003e\nEl valor del encabezado HTTP \u003cstrong\u003eAccess-Control-Allow-Origin\u003c/strong\u003e permite valores con prefijo y/o sufijo de dominios y/o subdominios externos.\n\u003cbr /\u003e\nAlgunas organizaciones deciden permitir el acceso desde todos sus subdominios (incluidos los futuros subdominios que aún no existen) o permitir el acceso desde dominios de otras organizaciones, incluidos sus subdominios. Estas reglas a menudo se implementan haciendo coincidir prefijos, sufijos o usando expresiones regulares. Un error en la implementación de estas reglas puede otorgar acceso a dominios externos no deseados.\n\u003cbr /\u003e\u003cbr /\u003e\nPrefijo (prefix):\n\u003cbr /\u003e\u003cbr /\u003e\n\u003ccode\u003e\nAccess-Control-Allow-Origin: https://example.com-malicious-website.com\n\u003cbr /\u003e\nAccess-Control-Allow-Credentials: true\n\u003c/code\u003e\n\u003cbr /\u003e\u003cbr /\u003e\nSufijo (suffix):\n\u003cbr /\u003e\u003cbr /\u003e\n\u003ccode\u003e\nAccess-Control-Allow-Origin: https://malicious-website-example.com\n\u003cbr /\u003e\nAccess-Control-Allow-Credentials: true\n\u003c/code\u003e\n\u003cbr /\u003e\u003cbr /\u003e\nReferencias: \n\u003cul\u003e\n\u003cli\u003e\u003ca href\u003d\"https://owasp.org/www-project-web-security-testing-guide/v41/4-Web_Application_Security_Testing/11-Client_Side_Testing/07-Testing_Cross_Origin_Resource_Sharing\"\u003eOWASP Web Security Testing Guide (WSTG)\u003c/a\u003e\u003c/li\u003e  \n\u003cli\u003e\u003ca href\u003d\"https://portswigger.net/web-security/cors\"\u003ePortSwigger\u003c/a\u003e\u003c/li\u003e\n\u003c/ul\u003e",
     "RemediationDetail": "",
     "IssueBackground": "",
     "RemediationBackground": "",
