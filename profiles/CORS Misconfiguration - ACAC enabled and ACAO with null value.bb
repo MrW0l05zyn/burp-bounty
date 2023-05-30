@@ -16,7 +16,8 @@
     ],
     "Tags": [
       "All",
-      "CORS"
+      "MrW0l05zyn",
+      "MrW0l05zyn - CORS"
     ],
     "PayloadResponse": false,
     "NotResponse": false,
