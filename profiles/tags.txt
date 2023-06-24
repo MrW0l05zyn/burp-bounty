@@ -1,6 +1,7 @@
 All
 MrW0l05zyn
 MrW0l05zyn - CORS
+MrW0l05zyn - SQLi
 MrW0l05zyn - XSS
 CVEs
 RCE
